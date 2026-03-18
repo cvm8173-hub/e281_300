@@ -15,26 +15,36 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/newton-school-of-technology-sonepat-212803",
-  "https://www.shiksha.com/college/ambalika-institute-of-management-and-technology-lucknow-32994",
-  "https://www.shiksha.com/college/iiit-nagpur-indian-institute-of-information-technology-53876",
-  "https://www.shiksha.com/college/bharati-vidyapeeth-college-of-engineering-bvcoe-navi-mumbai-49454",
-  "https://www.shiksha.com/college/devi-ahilya-vishwavidyalaya-takshashila-campus-indore-146099",
-  "https://www.shiksha.com/university/gd-goenka-university-gurgaon-36294",
-  "https://www.shiksha.com/college/cluster-innovation-centre-university-of-delhi-north-campus-59011",
-  "https://www.shiksha.com/college/gitam-school-of-technology-visakhapatnam-46353",
-  "https://www.shiksha.com/college/government-engineering-college-thrissur-52578",
-  "https://www.shiksha.com/university/amrita-school-of-engineering-amrita-vishwa-vidyapeetham-chennai-campus-58653",
-  "https://www.shiksha.com/college/iiit-bhopal-indian-institute-of-information-technology-53843",
-  "https://www.shiksha.com/college/r-v-institute-of-technology-and-management-j-p-nagar-bangalore-65941",
-  "https://www.shiksha.com/college/gitam-school-of-technology-hyderabad-patancheru-51852",
-  "https://www.shiksha.com/college/vishwakarma-government-engineering-college-chandkheda-ahmedabad-38266",
-  "https://www.shiksha.com/university/chandigarh-university-up-campus-lucknow-229904",
-  "https://www.shiksha.com/college/nmims-deemed-to-be-university-navi-mumbai-campus-52251",
-  "https://www.shiksha.com/college/gl-bajaj-group-of-institutions-glbgi-mathura-48815",
-  "https://www.shiksha.com/college/sardar-patel-college-of-engineering-andheri-west-mumbai-29738",
-  "https://www.shiksha.com/university/birla-institute-of-technology-mesra-patna-extension-center-51594",
-  "https://www.shiksha.com/college/bannari-amman-institute-of-technology-erode-9761",
+  "https://www.shiksha.com/college/c-k-pithawalla-college-of-engineering-and-technology-surat-11583",
+  "https://www.shiksha.com/college/arjun-college-of-technology-coimbatore-53339",
+  "https://www.shiksha.com/college/rvs-college-of-engineering-and-technology-coimbatore-21021",
+  "https://www.shiksha.com/college/ch-ranbir-singh-state-institute-of-engineering-and-technology-jhajjar-61435",
+  "https://www.shiksha.com/university/sardar-patel-university-balaghat-66075",
+  "https://www.shiksha.com/college/amritsar-group-of-colleges-24780",
+  "https://www.shiksha.com/university/west-bengal-university-of-animal-and-fishery-sciences-kolkata-61833",
+  "https://www.shiksha.com/college/anand-school-of-engineering-and-technology-agra-22419",
+  "https://www.shiksha.com/college/hrit-group-of-institutions-ghaziabad-24751",
+  "https://www.shiksha.com/university/girijananda-chowdhury-university-guwahati-237710",
+  "https://www.shiksha.com/college/royal-college-of-engineering-and-technology-kerala-other-24731",
+  "https://www.shiksha.com/university/pdkv-dr-panjabrao-deshmukh-krishi-vidyapeeth-akola-52618",
+  "https://www.shiksha.com/college/rerf-regent-education-and-research-foundation-barrackpore-kolkata-40860",
+  "https://www.shiksha.com/college/jerusalem-college-of-engineering-chennai-pallikaranai-24175",
+  "https://www.shiksha.com/college/swami-vivekanand-institute-of-engineering-and-technology-patiala-116837",
+  "https://www.shiksha.com/university/bckv-bidhan-chandra-krishi-viswavidyalaya-west-bengal-other-25295",
+  "https://www.shiksha.com/college/dhanekula-inst-of-engineering-technology-vijayawada-60718",
+  "https://www.shiksha.com/university/university-of-technology-jaipur-54435",
+  "https://www.shiksha.com/college/m-s-bidve-engineering-college-latur-20543",
+  "https://www.shiksha.com/college/college-of-agriculture-vellayani-kerala-agricultural-university-thiruvananthapuram-58247",
+  "https://www.shiksha.com/college/jain-college-of-engineering-and-technology-hubli-59177",
+  "https://www.shiksha.com/college/city-engineering-college-cec-banglore-kanakapura-road-bangalore-23173",
+  "https://www.shiksha.com/university/guru-angad-dev-veterinary-and-animal-sciences-university-ludhiana-24253",
+  "https://www.shiksha.com/college/anjalai-ammal-mahalingam-engineering-college-tiruchirappalli-48481",
+  "https://www.shiksha.com/university/jg-university-ahmedabad-203025",
+  "https://www.shiksha.com/university/maharaja-agrasen-himalayan-garhwal-university-uttarakhand-other-64413",
+  "https://www.shiksha.com/college/cem-college-of-engineering-management-west-bengal-other-19745",
+  "https://www.shiksha.com/college/vel-tech-high-tech-dr-rangarajan-dr-sakunthala-engineering-college-avadi-chennai-42946",
+  "https://www.shiksha.com/college/gandhi-institute-of-technology-and-management-bhubaneswar-36696",
+  "https://www.shiksha.com/college/shri-neminath-jain-bhhramcharyashram-nashik-52825",
 ]
 
 
@@ -9243,7 +9253,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =281
+    c_count =711
 
     try:
         for base_url in BASE_URL:
