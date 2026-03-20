@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/raffles-university-neemrana-48475",
-  "https://www.shiksha.com/college/sanjay-bhokare-group-of-institutes-maharashtra-other-59083",
-  "https://www.shiksha.com/college/aar-mahaveer-engineering-college-hyderabad-63707",
-  "https://www.shiksha.com/college/lakshmi-narain-college-of-technology-jabalpur-60355",
-  "https://www.shiksha.com/college/vilasrao-deshmukh-foundation-group-of-institutions-latur-59423",
-  "https://www.shiksha.com/college/shri-someshwar-shikshan-prasarak-mandal-sharadchandra-pawar-college-of-engineering-and-technology-pune-147801",
-  "https://www.shiksha.com/university/st-aloysius-deemed-to-be-university-mangalore-225167",
-  "https://www.shiksha.com/college/neotechical-campus-vadodara-60121",
-  "https://www.shiksha.com/college/central-institute-of-plastics-engineering-and-technology-jaipur-148169",
-  "https://www.shiksha.com/university/jayoti-vidyapeeth-women-s-university-jaipur-24508",
-  "https://www.shiksha.com/college/vadodara-institute-of-engineering-waghodiya-60247",
-  "https://www.shiksha.com/college/karanjekar-college-of-engineering-and-management-sakoli-213381",
-  "https://www.shiksha.com/college/united-institute-of-technology-coimbatore-48098",
-  "https://www.shiksha.com/college/patel-college-of-science-and-technology-bhopal-52561",
-  "https://www.shiksha.com/college/mysuru-royal-institute-of-technology-mysore-59743",
-  "https://www.shiksha.com/college/roland-institute-of-technology-berhampur-61381",
-  "https://www.shiksha.com/college/mcet-murshidabad-college-of-engineering-and-technology-20689",
-  "https://www.shiksha.com/college/government-engineering-college-arwal-gaya-146415",
-  "https://www.shiksha.com/college/siwan-engineering-and-technical-institute-seti-siwan-bihar-other-23761",
-  "https://www.shiksha.com/college/pacific-school-of-engineering-surat-60139",
+  "https://www.shiksha.com/college/the-true-school-of-music-vijaybhoomi-university-karjat-mumbai-150463",
+  "https://www.shiksha.com/college/mahatma-gandhi-engineering-college-jaipur-46875",
+  "https://www.shiksha.com/college/trinity-college-of-engineering-thiruvananthapuram-47525",
+  "https://www.shiksha.com/college/government-engineering-college-godhra-60187",
+  "https://www.shiksha.com/college/v-s-m-college-of-engineering-andhra-pradesh-other-60977",
+  "https://www.shiksha.com/college/trimurti-institute-of-technology-jalgaon-147865",
+  "https://www.shiksha.com/college/jaywant-college-of-engineering-and-polytechnic-sangli-179825",
+  "https://www.shiksha.com/college/hitkarini-college-of-engineering-and-technology-hcet-jabalpur-20148",
+  "https://www.shiksha.com/college/prakasam-engineering-college-22878",
+  "https://www.shiksha.com/college/beehive-college-of-engineering-and-technology-bcet-dehradun-24356",
+  "https://www.shiksha.com/college/anurag-college-of-engineering-ranga-reddy-47276",
+  "https://www.shiksha.com/college/lenora-college-of-engineering-east-godavari-20517",
+  "https://www.shiksha.com/college/nizam-institute-of-engineering-and-technology-niet-hyederabad-nalgonda-22840",
+  "https://www.shiksha.com/college/nimra-institute-of-science-and-technology-andhra-pradesh-other-43316",
+  "https://www.shiksha.com/college/jagannath-institute-of-engineering-and-technology-cuttack-66737",
+  "https://www.shiksha.com/college/punjab-institute-of-technology-gtb-garh-maharaja-ranjit-singh-punjab-technical-university-moga-130913",
+  "https://www.shiksha.com/college/school-of-technology-management-and-engineering-nmims-chandigarh-204573",
+  "https://www.shiksha.com/college/basavakalyan-engineering-college-bidar-19589",
+  "https://www.shiksha.com/college/acn-college-of-engineering-and-management-studies-aligarh-37573",
+  "https://www.shiksha.com/college/sret-college-of-engineering-and-technology-sai-ram-educational-trust-s-hamirpur-40957",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1201
+    c_count =1581
 
     try:
         for base_url in BASE_URL:
