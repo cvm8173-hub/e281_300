@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/vandayar-engineering-college-thanjavur-54330",
-  "https://www.shiksha.com/college/sri-lakshmi-narayana-college-of-engineering-bharath-institute-of-higher-education-and-research-pondicherry-225655",
-  "https://www.shiksha.com/college/women-s-engineering-college-wec-pondicherry-229634",
-  "https://www.shiksha.com/college/jnit-jagan-nath-gupta-institute-of-engineering-and-technology-jaipur-38600",
-  "https://www.shiksha.com/college/bharath-college-of-engineering-and-technology-for-women-kadapa-46492",
-  "https://www.shiksha.com/college/chiranjeevi-reddy-institute-of-engineering-and-technology-anantapur-46499",
-  "https://www.shiksha.com/college/bhargava-college-of-engineering-and-technology-samba-66535",
-  "https://www.shiksha.com/college/g-d-college-of-food-technology-solapur-67027",
-  "https://www.shiksha.com/college/lakshya-institute-shahjahanpur-72853",
-  "https://www.shiksha.com/college/rayat-bahra-innovative-institute-of-technology-management-sonepat-35926",
-  "https://www.shiksha.com/college/jay-shriram-group-of-institutions-tamil-nadu-other-42942",
-  "https://www.shiksha.com/college/maharana-pratap-college-of-engineering-kanpur-53999",
-  "https://www.shiksha.com/college/kkc-institute-of-technology-and-engineering-kkct-puttur-chittoor-46580",
-  "https://www.shiksha.com/college/devprayag-institute-of-management-allahabad-53837",
-  "https://www.shiksha.com/college/smt-s-r-patel-engineering-college-unjha-patan-60227",
-  "https://www.shiksha.com/college/sri-vinayaka-group-of-institutions-kolar-60731",
-  "https://www.shiksha.com/college/d-n-r-college-dnrc-andhra-pradesh-andhra-pradesh-other-25381",
-  "https://www.shiksha.com/university/manav-bharti-university-solan-38094",
-  "https://www.shiksha.com/college/shri-satsangi-saketdham-ram-ashram-group-of-institutions-mehsana-60205",
-  "https://www.shiksha.com/college/indira-institute-of-technology-and-sciences-prakasam-60666",
+  "https://www.shiksha.com/college/government-commerce-college-alwar-213173",
+  "https://www.shiksha.com/provider/quality-austria-central-asia-226247",
+  "https://www.shiksha.com/college/government-pharmacy-college-rakkar-kangra-229774",
+  "https://www.shiksha.com/college/goverment-medical-college-singrauli-245310",
+  "https://www.shiksha.com/college/mahatma-gandhi-engineering-college-jaipur-46875",
+  "https://www.shiksha.com/college/surendera-group-of-institutions-sriganaganagar-46880",
+  "https://www.shiksha.com/college/divya-college-of-pharmacy-mathura-59543",
+  "https://www.shiksha.com/college/st-mary-s-college-of-pharmaceutical-sciences-and-research-andhra-pradesh-other-60987",
+  "https://www.shiksha.com/college/takshashila-mahavidyalaya-chhatarpur-77243",
+  "https://www.shiksha.com/college/jijamata-shikshan-sanstha-s-college-of-pharmacy-jalgaon-88381",
+  "https://www.shiksha.com/college/atam-institute-of-pharmacy-hansi-88521",
+  "https://www.shiksha.com/college/bhagirathi-institute-of-pharmacy-uttarakhand-other-88927",
+  "https://www.shiksha.com/college/roorkee-ayurvedic-medical-college-89057",
+  "https://www.shiksha.com/college/jl-chaturvedi-college-of-pharmacy-nagpur-89151",
+  "https://www.shiksha.com/college/kd-institute-of-nursing-science-ahmedabad-90195",
+  "https://www.shiksha.com/college/vadamalayan-hospitals-madurai-106027",
+  "https://www.shiksha.com/college/college-of-pharmacy-buldhana-maharashtra-other-147897",
+  "https://www.shiksha.com/college/padmashree-dr-d-y-patil-institute-of-pharmacy-d-pharm-pune-147917",
+  "https://www.shiksha.com/college/vidyarathna-para-medical-college-udupi-184969",
+  "https://www.shiksha.com/college/naina-college-of-nursing-mandi-186795",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2001
+    c_count = 3721
 
     try:
         for base_url in BASE_URL:
