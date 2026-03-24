@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/b-s-college-of-pharmacy-uttar-pradesh-other-181139",
-  "https://www.shiksha.com/college/dr-anita-yadav-college-of-pharmacy-uttar-pradesh-other-181169",
-  "https://www.shiksha.com/college/dr-s-n-dev-college-of-pharmacy-uttar-pradesh-other-181189",
-  "https://www.shiksha.com/college/hassan-college-of-pharmacy-gulbarga-207749",
-  "https://www.shiksha.com/college/rr-college-of-pharmacy-kolar-207869",
-  "https://www.shiksha.com/college/t-m-a-e-society-m-m-j-g-college-of-pharmacy-haveri-207991",
-  "https://www.shiksha.com/college/department-of-pharmacy-rama-shiksha-sansthan-fatehpur-208159",
-  "https://www.shiksha.com/college/aman-pharmacy-college-jhunjhunu-208171",
-  "https://www.shiksha.com/college/apex-institute-of-pharmaceutical-sciences-jaipur-208175",
-  "https://www.shiksha.com/college/krishna-institute-of-professional-education-bijnor-208315",
-  "https://www.shiksha.com/college/talla-padmavathi-pharmacy-college-warangal-andhra-pradesh-other-208715",
-  "https://www.shiksha.com/college/government-medical-college-ankushapu-telangana-other-213219",
-  "https://www.shiksha.com/college/lalitha-super-specialities-hospital-guntur-214365",
-  "https://www.shiksha.com/college/unitech-b-school-tathawade-pune-214485",
-  "https://www.shiksha.com/provider/uc-davis-225951",
-  "https://www.shiksha.com/provider/getsmarter-226093",
-  "https://www.shiksha.com/university/kaveri-university-siddipet-228405",
-  "https://www.shiksha.com/college/chetana-college-of-pharmacy-sagar-230054",
-  "https://www.shiksha.com/college/lal-bahadur-shastri-college-of-pharmacy-hisar-237390",
-  "https://www.shiksha.com/college/gurukul-college-of-pharmacy-kota-237466",
+  "https://www.shiksha.com/college/maa-kunti-devi-college-of-pharmacy-uttar-pradesh-other-181283",
+  "https://www.shiksha.com/college/m-i-t-i-t-meerut-181309",
+  "https://www.shiksha.com/college/parshu-ram-verma-memorial-college-of-pharmacy-faizabad-181335",
+  "https://www.shiksha.com/college/vv-college-of-pharmacy-saharanpur-182017",
+  "https://www.shiksha.com/college/munna-singh-pharmacy-college-uttar-pradesh-other-182033",
+  "https://www.shiksha.com/college/vidushi-mahila-mahavidyalaya-ambedkar-nagar-184597",
+  "https://www.shiksha.com/college/shri-g-e-s-s-college-of-nursing-karnataka-other-184671",
+  "https://www.shiksha.com/college/neigrihms-college-of-nursing-shillong-187373",
+  "https://www.shiksha.com/college/mother-teresa-college-of-nursing-surajpur-187605",
+  "https://www.shiksha.com/college/shri-hari-pharmacy-college-churu-193403",
+  "https://www.shiksha.com/college/international-centre-for-cardio-theracic-and-vascular-diseases-chennai-193855",
+  "https://www.shiksha.com/college/seventh-day-adventist-college-of-nursing-palakkad-194603",
+  "https://www.shiksha.com/college/c-d-l-college-of-pharmacy-yamuna-nagar-195355",
+  "https://www.shiksha.com/college/dalia-physiotherapy-college-kanera-197257",
+  "https://www.shiksha.com/college/chitrini-college-of-physiotherapy-sabarkantha-197573",
+  "https://www.shiksha.com/college/pragathi-college-of-pharmacy-bidar-199497",
+  "https://www.shiksha.com/college/post-graduate-institute-of-paramedical-sciences-hassan-199669",
+  "https://www.shiksha.com/college/radiant-college-of-pharmacy-uttar-pradesh-other-200009",
+  "https://www.shiksha.com/college/sanjeevini-school-of-pharmacy-vijayapura-karnataka-other-207885",
+  "https://www.shiksha.com/college/the-soniya-education-trust-s-rural-college-of-pharmacy-karnataka-other-207933",
 ]
 
 
@@ -9248,7 +9248,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4081
+    c_count = 4441
 
     try:
         for base_url in BASE_URL:
