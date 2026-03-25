@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/maa-kunti-devi-college-of-pharmacy-uttar-pradesh-other-181283",
-  "https://www.shiksha.com/college/m-i-t-i-t-meerut-181309",
-  "https://www.shiksha.com/college/parshu-ram-verma-memorial-college-of-pharmacy-faizabad-181335",
-  "https://www.shiksha.com/college/vv-college-of-pharmacy-saharanpur-182017",
-  "https://www.shiksha.com/college/munna-singh-pharmacy-college-uttar-pradesh-other-182033",
-  "https://www.shiksha.com/college/vidushi-mahila-mahavidyalaya-ambedkar-nagar-184597",
-  "https://www.shiksha.com/college/shri-g-e-s-s-college-of-nursing-karnataka-other-184671",
-  "https://www.shiksha.com/college/neigrihms-college-of-nursing-shillong-187373",
-  "https://www.shiksha.com/college/mother-teresa-college-of-nursing-surajpur-187605",
-  "https://www.shiksha.com/college/shri-hari-pharmacy-college-churu-193403",
-  "https://www.shiksha.com/college/international-centre-for-cardio-theracic-and-vascular-diseases-chennai-193855",
-  "https://www.shiksha.com/college/seventh-day-adventist-college-of-nursing-palakkad-194603",
-  "https://www.shiksha.com/college/c-d-l-college-of-pharmacy-yamuna-nagar-195355",
-  "https://www.shiksha.com/college/dalia-physiotherapy-college-kanera-197257",
-  "https://www.shiksha.com/college/chitrini-college-of-physiotherapy-sabarkantha-197573",
-  "https://www.shiksha.com/college/pragathi-college-of-pharmacy-bidar-199497",
-  "https://www.shiksha.com/college/post-graduate-institute-of-paramedical-sciences-hassan-199669",
-  "https://www.shiksha.com/college/radiant-college-of-pharmacy-uttar-pradesh-other-200009",
-  "https://www.shiksha.com/college/sanjeevini-school-of-pharmacy-vijayapura-karnataka-other-207885",
-  "https://www.shiksha.com/college/the-soniya-education-trust-s-rural-college-of-pharmacy-karnataka-other-207933",
+  "https://www.shiksha.com/college/k-l-r-college-of-physiotherapy-telangana-other-194075",
+  "https://www.shiksha.com/college/emversity-school-of-hospitality-health-sciences-faridabad-227669",
+  "https://www.shiksha.com/college/ayush-gram-college-of-pharmacy-ratlam-230044",
+  "https://www.shiksha.com/college/radharaman-institute-of-pharmaceutical-sciences-bhopal-53068",
+  "https://www.shiksha.com/college/college-of-pharmaceutical-sciences-kozhikkode-kozhikode-60445",
+  "https://www.shiksha.com/college/seshachala-college-of-pharmacy-andhra-pradesh-other-61067",
+  "https://www.shiksha.com/college/k-g-r-l-college-west-godavari-63935",
+  "https://www.shiksha.com/college/asra-group-of-institutions-tehsil-bhawanigarh-65145",
+  "https://www.shiksha.com/college/vanita-vishram-women-s-university-surat-69309",
+  "https://www.shiksha.com/college/shri-laxmanrao-mankar-institute-of-pharmacy-maharashtra-other-89219",
+  "https://www.shiksha.com/college/bvm-college-of-pharmacy-gwalior-147457",
+  "https://www.shiksha.com/college/itm-college-of-pharmacy-aligarh-148939",
+  "https://www.shiksha.com/college/shraddha-institute-of-pharmacy-washim-150653",
+  "https://www.shiksha.com/college/mediscan-systems-chennai-193659",
+  "https://www.shiksha.com/college/maria-siddha-medical-college-and-hospital-kanyakumari-194015",
+  "https://www.shiksha.com/college/saket-institute-of-research-and-paramedical-science-allahabad-199977",
+  "https://www.shiksha.com/college/mgm-medical-college-panvel-navi-mumbai-244954",
+  "https://www.shiksha.com/college/gokula-krishna-college-of-pharmacy-nellore-60839",
+  "https://www.shiksha.com/college/ankerite-college-of-pharmacy-lucknow-65455",
+  "https://www.shiksha.com/college/shri-vivekanand-nursing-home-trust-s-college-of-b-pharmacy-ahmednagar-88151",
 ]
 
 
@@ -9248,7 +9248,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4441
+    c_count = 2721
 
     try:
         for base_url in BASE_URL:
